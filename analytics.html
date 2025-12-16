@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Deal Analytics & Insights</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="d-flex">
+
+  <aside class="sidebar">
+    <h4 class="logo">CRM Pro</h4>
+    <a href="index.html">Dashboard</a>
+    <a href="deals.html">Deals</a>
+    <a href="add-deal.html">Add Deal</a>
+    <a href="analytics.html" class="active">Analytics</a>
+  </aside>
+
+  <main class="content p-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <div>
+        <h2 class="fw-bold">Deal Analytics & Insights</h2>
+        <p class="text-muted">Performance metrics and sales funnel analysis</p>
+      </div>
+      <select class="form-select w-auto">
+        <option>Last 30 Days</option>
+        <option>Last 6 Months</option>
+        <option>This Year</option>
+      </select>
+    </div>
+
+    <div class="row g-4 mb-4">
+      <div class="col-md-3">
+        <div class="card p-4 text-center">
+          <h6 class="text-muted">Conversion Rate</h6>
+          <h2 class="fw-bold text-success">52%</h2>
+          <p class="small text-muted">↑ 6% from last period</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-4 text-center">
+          <h6 class="text-muted">Total Revenue</h6>
+          <h2 class="fw-bold">₹8.4M</h2>
+          <p class="small text-success">↑ ₹1.2M growth</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-4 text-center">
+          <h6 class="text-muted">Avg Deal Value</h6>
+          <h2 class="fw-bold">₹1.1M</h2>
+          <p class="small text-muted">Stable</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-4 text-center">
+          <h6 class="text-muted">Sales Cycle</h6>
+          <h2 class="fw-bold">21 days</h2>
+          <p class="small text-success">↓ Faster close</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 mb-4">
+      <div class="col-md-8">
+        <div class="card p-4">
+          <h5 class="fw-bold mb-3">Revenue Trend</h5>
+          <div class="chart-placeholder large-chart"></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-4">
+          <h5 class="fw-bold mb-3">Deal Status Split</h5>
+          <div class="donut-chart">
+            <span>Won 52%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card p-4">
+          <h5 class="fw-bold mb-3">Sales Funnel Overview</h5>
+          <div class="funnel">
+            <div class="funnel-stage open">Leads – 120</div>
+            <div class="funnel-stage open">Qualified – 86</div>
+            <div class="funnel-stage won">Negotiation – 54</div>
+            <div class="funnel-stage won">Closed Won – 67</div>
+            <div class="funnel-stage lost">Closed Lost – 19</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card p-4">
+          <h5 class="fw-bold mb-3">Key Insights</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">✔ Highest conversions from Enterprise clients</li>
+            <li class="list-group-item">📈 Deals close faster when demo is done within 3 days</li>
+            <li class="list-group-item">⚠ Marketing deals have longer sales cycles</li>
+            <li class="list-group-item">💡 Follow-ups increase win rate by 18%</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
